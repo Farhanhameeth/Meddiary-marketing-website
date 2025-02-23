@@ -1,0 +1,373 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F0F9FF; /* Very Light Blue */
+    color: #1E293B; /* Deep Grayish Blue */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    position: fixed; /* Sticks to the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it's above all content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent with slight white tint */
+    backdrop-filter: blur(10px); /* Soft blur effect for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Logo Styling */
+header .logo {
+    width: 100px; /* Reduced size */
+    height: auto;
+}
+
+
+/* Navigation Styles */
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #1E3A8A; /* Dark Blue */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+header nav ul li a:hover {
+    color: #2563EB; /* Brighter Blue */
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none; /* Hidden by default on larger screens */
+    font-size: 2rem;
+    color: #1E3A8A;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle on mobile */
+    }
+
+    nav ul {
+        display: none; /* Hide menu items by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+        width: 200px;
+        text-align: right;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    nav ul li {
+        margin: 10px 20px;
+    }
+}
+
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/wallpaper.png') no-repeat center center;
+    background-size: cover; /* Cover full section */
+    background-color: #DBEAFE; /* Fallback color */
+    position: relative;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Transparent overlay for subtle effect */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Adjust transparency */
+    z-index: 1;
+}
+
+/* Logo */
+.hero-logo {
+    width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 2; /* Ensures it's above the overlay */
+}
+
+/* Headings & Text */
+#hero h1, #hero p {
+    position: relative;
+    z-index: 2; /* Ensures visibility */
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: #1E3A8A; /* Dark Blue */
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #3B82F6; /* Blue */
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    background-color: #BFDBFE; /* Light Blue */
+}
+
+#about h2 {
+    color: #1E3A8A; /* Dark Blue */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #3B82F6; /* Blue */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+#features {
+    padding: 60px 20px;
+    background-color: #DBEAFE; /* Softer Light Blue */
+    text-align: center;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 30%;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature img {
+    width: 160px; /* Adjust as per your image size */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Added border-radius */
+}
+
+#features h2 {
+    color: #1E3A8A; /* Dark Blue */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    color: #2563EB; /* Strong Blue */
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #3B82F6;
+}
+
+
+/* Prevention Section */
+#prevention {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#prevention h2 {
+    font-size: 2.5rem;
+    color: #1E3A8A; /* Dark Blue */
+    margin-bottom: 30px;
+}
+
+.prevention-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.prevention-item {
+    width: 30%;
+    margin: 20px 0;
+    background-color: #F0F9FF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.prevention-item img {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.prevention-item h3 {
+    font-size: 1.8rem;
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+
+.prevention-item p {
+    font-size: 1.1rem;
+    color: #3B82F6;
+}
+
+/* Prevent Section */
+#prevent {
+    padding: 60px 20px;
+    background-color: #F0F9FF; /* Very Light Blue */
+    text-align: center;
+}
+
+#prevent h2 {
+    font-size: 2.5rem;
+    color: #1E3A8A; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.prevent-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.prevent-item {
+    width: calc(33.33% - 20px); /* Ensures three items per row */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.prevent-item img {
+    width: 260px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .prevent-item {
+        width: calc(50% - 20px); /* Two per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .prevent-item {
+        width: 100%; /* One per row on mobile */
+    }
+}
+
+
+.prevent-item h3 {
+    font-size: 1.8rem;
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+
+.prevent-item p {
+    font-size: 1.1rem;
+    color: #3B82F6;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #DBEAFE; /* Softer Light Blue */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    color: #3B82F6;
+}
+
+.contact-info a {
+    color: #2563EB;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #BFDBFE; /* Light Blue */
+    text-align: center;
+    color: #1E3A8A; /* Dark Blue */
+}
+
+footer p {
+    font-size: 1rem;
+}

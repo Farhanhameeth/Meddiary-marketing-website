@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedDiary - Save Time and Your Loved Ones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo small.png" alt="MedDiary Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#prevention">Prevention</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="images/logo.png" alt="MedDiary Logo" class="hero-logo">
+        <h1>MedDiary - Your Health Companion</h1>
+        <p>Save time and protect your loved ones with organized health tracking!</p>
+    </section>
+    
+    <section id="about" data-aos="fade-up">
+        <h2>About MedDiary</h2>
+        <p>MedDiary is a smart and intuitive health management application designed to simplify your healthcare routine. Whether you're managing your own medical schedule or taking care of a loved one, MedDiary ensures that you never miss an important appointment, medication dose, or health update.</p>
+        <p> .</p>
+        <p>With features like medication reminders, appointment tracking, and emergency information storage, MedDiary serves as your personal health assistant, helping you stay organized and proactive. Our goal is to reduce hospital crowding, prevent missed treatments, and empower individuals to take control of their well-being.</p>
+        <p> .</p>
+        <p>MedDiary is more than just an app—it's a commitment to better healthcare accessibility, efficiency, and peace of mind for you and your family.</p>
+    </section>
+
+    <section id="features" data-aos="fade-up" data-aos-delay="100">
+        <h2>Our Features</h2>
+        <div class="features-list">
+            <div class="feature">
+                <img src="images/medicine-educator.png" alt="Medicine Educator" class="feature-img">
+                <h3>Medicine Educator</h3>
+                <p>Get detailed information about your prescribed medications, including usage, side effects, and best practices.</p>
+            </div>
+            <div class="feature">
+                <img src="images/medication-reminder.png" alt="Medication Reminder" class="feature-img">
+                <h3>Medication Reminder</h3>
+                <p>Never forget to take your medications with our smart reminder system that ensures timely doses.</p>
+            </div>
+            <div class="feature">
+                <img src="images/digital-health-record.png" alt="Digital Health Record" class="feature-img">
+                <h3>Digital Health Record</h3>
+                <p>Securely store and access your health records, medical history, and reports in one convenient place.</p>
+            </div>
+            <div class="feature">
+                <img src="images/treatment-tracking.png" alt="Treatment Tracking" class="feature-img">
+                <h3>Treatment Tracking & Follow-ups</h3>
+                <p>Monitor ongoing treatments with continuous follow-ups, ensuring better healthcare management.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="prevent" data-aos="fade-up">
+        <h2>What Are We Trying to Prevent?</h2>
+        <div class="prevent-list">
+            <div class="prevent-item">
+                <img src="images/missed-medications.png" alt="Missed Medications">
+                <h3>Missed Medications</h3>
+                <p>Ensuring timely intake of prescribed medications with smart reminders.</p>
+            </div>
+            <div class="prevent-item">
+                <img src="images/forgotten-appointments.png" alt="Missed Appointments">
+                <h3>Missed Appointments</h3>
+                <p>Never forget a medical appointment again with automated scheduling.</p>
+            </div>
+            <div class="prevent-item">
+                <img src="images/health-record-mismanagement.png" alt="Health Record Mismanagement">
+                <h3>Health Record Mismanagement</h3>
+                <p>Keep all medical reports and records securely in one place.</p>
+            </div>
+            <div class="prevent-item">
+                <img src="images/crowd-management.png" alt="Hospital Overcrowding">
+                <h3>Hospital Overcrowding</h3>
+                <p>Efficient patient scheduling to reduce long waiting times and crowd congestion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up" data-aos-delay="400">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Have questions or want to learn more about MedDiary? Get in touch with us!</p>
+            <p>Email: <a href="mailto:support@meddiary.com">support@meddiary.com</a></p>
+            <p>Phone: <a href="tel:+94705823656">+94 (70) 582-3656</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MedDiary. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            const splashScreen = document.getElementById("splash-screen");
+            setTimeout(() => {
+                splashScreen.classList.add("fade-out");
+            }, 2000);
+        });
+
+        AOS.init({
+            duration: 1200,
+            once: false,
+            offset: 120,
+        });
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/67b8c21c8bb3c9190a0e1ace/1ikkrcg9s';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
